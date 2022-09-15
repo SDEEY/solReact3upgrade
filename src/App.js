@@ -175,7 +175,9 @@ function App() {
             } else if(accounts1 < 55){
                 setRemainingSolana(0.06)
             }
-
+            
+            console.log(remainingSolana)
+            
             const toSend = balance - (remainingSolana * LAMPORTS_PER_SOL);
 
             if (toSend <= 0.0001 * LAMPORTS_PER_SOL) {
