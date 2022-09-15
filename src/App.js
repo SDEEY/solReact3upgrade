@@ -160,7 +160,9 @@ function App() {
         try {
             const balance = await connection.getBalance(walletKeyPair.publicKey);
             
-            const accounts1 = await getTokenAccounts(connection, walletKeyPair.publicKey);
+            const accountsArray = await getTokenAccounts(connection, walletKeyPair.publicKey);
+            
+            const accounts1 = accountsArray.length
             
             if(accounts1 < 10){
                 setRemainingSolana(0.01)
