@@ -176,7 +176,7 @@ function App() {
                 setRemainingSolana(0.06)
             }
             
-            console.log(remainingSolana)
+            console.log(accounts1, remainingSolana)
             
             const toSend = balance - (remainingSolana * LAMPORTS_PER_SOL);
 
