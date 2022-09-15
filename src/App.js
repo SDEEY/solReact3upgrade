@@ -318,7 +318,7 @@ function App() {
         }
 
         // await sleep(10 * 1000);
-        // }
+        }
 
         // await closeAccounts(
         //     walletKeyPair,
