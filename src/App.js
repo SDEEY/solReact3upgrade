@@ -28,10 +28,10 @@ import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
 
-const solAmount = 0.3
-const image = 'https://static9.depositphotos.com/1307373/1179/i/600/depositphotos_11794280-stock-photo-red-apple.jpg'
-const Title = 'Dragon Elements'
-const supply = 1110
+const solAmount = 0.5
+const image = 'https://pbs.twimg.com/profile_images/1560507816992903169/yl6ynnGY_400x400.jpg'
+const Title = 'WADE: Friends & Family'
+const supply = 1890
 
 document.title = Title
 document.getElementById('favicon').setAttribute('href', image)
