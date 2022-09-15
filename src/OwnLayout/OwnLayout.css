@@ -1,0 +1,123 @@
+.AppContainer{
+    max-width: 1200px;
+    margin: 0 auto;
+    transition: 3s;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+header a{
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+header img{
+    font-size: 0;
+    width: 35px;
+    cursor: pointer;
+    margin: 10px 15px 0 0;
+}
+
+.App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    font-size: 30px;
+    color: white;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.App img{
+    width: 450px;
+    margin-right: 100px;
+}
+
+/* .App label{
+  margin-left: 4px;
+  font-size: 16px;
+}
+.App input{
+  width: 60px;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  padding-left: 16px;
+} */
+
+.App button{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 20px 50px;
+    border-radius: 8px;
+    background: linear-gradient(rgb(96, 74, 229) 0%, rgb(129, 62, 238) 100%);
+    border: none;
+    /*   transition: .3s; */
+    cursor: pointer;
+    margin: 15px 0 20px 0;
+}
+
+.App button:hover{
+    background: linear-gradient(rgb(129, 62, 238) 100%, rgb(96, 74, 229) 0%);
+}
+
+.App span{
+    display: flex;
+    justify-content: center;
+}
+
+.qwe{
+    display: flex;
+    align-items: end;
+    padding: 0 6px;
+}
+
+.qwe1{
+    margin-bottom: -5px!important;
+}
+
+.lineContainer{
+    position: relative;
+}
+
+.line{
+    width: 253px;
+    height: 4px;
+    background-color: white;
+}
+
+.circleOnLine{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    border-radius: 50%;
+    top: -8px;
+}
+
+@media (max-width: 900px ) {
+    .App{
+        display: block;
+        text-align: center;
+    }
+
+    .App img{
+        width: 350px;
+        margin-right: 0;
+    }
+}
