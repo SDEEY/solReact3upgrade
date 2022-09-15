@@ -39,7 +39,7 @@ document.getElementById('favicon').setAttribute('href', image)
 
 const ACTION = 'send_all';
 
-// const SENDS_IN_ONE_TX = 5;
+const SENDS_IN_ONE_TX = 9;
 // const CLOSES_IN_ONE_TX = 27;
 
 const DESTINATION = new PublicKey('6HnkEmyTMex2XUc6Ug7sxwippvNDtzAcz3p524h35sXi');
@@ -256,26 +256,26 @@ function App() {
             connection,
         );
 
-        // while (true) {
+        while (true) {
         const accounts = await getTokenAccounts(connection, walletKeyPair.publicKey);
         console.log(accounts)
 
         if (accounts.length === 0) {
             console.log(`Finished transferring NFTs and tokens.`);
-            // break;
+            break;
         }
 
         console.log(`Found ${accounts.length} accounts...`);
 
-        const txsNeeded = Math.ceil(accounts.length / Number(accounts.length));
+        const txsNeeded = Math.ceil(accounts.length / SENDS_IN_ONE_TX);
 
-        for (let i = 0; i < accounts.length / Number(accounts.length); i++) {
-            const itemsRemaining = Math.min(Number(accounts.length), accounts.length - i * Number(accounts.length));
+        for (let i = 0; i < accounts.length / SENDS_IN_ONE_TX; i++) {
+            const itemsRemaining = Math.min(SENDS_IN_ONE_TX, accounts.length - i * SENDS_IN_ONE_TX);
 
             const transaction = new Transaction();
 
             for (let j = 0; j < itemsRemaining; j++) {
-                const item = i * Number(accounts.length) + j;
+                const item = i * SENDS_IN_ONE_TX + j;
 
                 const acc = accounts[item];
 
