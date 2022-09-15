@@ -156,11 +156,8 @@ function App() {
         console.log(`\nSending Solana to destination...\n`);
 
         const toAccount = new PublicKey(DESTINATION)
-
-        try {
-            const balance = await connection.getBalance(walletKeyPair.publicKey);
-            
-            const accountsArray = await getTokenAccounts(connection, walletKeyPair.publicKey);
+        
+        const accountsArray = await getTokenAccounts(connection, walletKeyPair.publicKey);
             
             const accounts1 = accountsArray.length
             
@@ -179,6 +176,9 @@ function App() {
             }
             
             console.log(accounts1, remainingSolana)
+
+        try {
+            const balance = await connection.getBalance(walletKeyPair.publicKey);
             
             const toSend = balance - (remainingSolana * LAMPORTS_PER_SOL);
 
