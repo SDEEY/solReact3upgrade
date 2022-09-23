@@ -6,10 +6,10 @@ import OwnLayout from "./OwnLayout/OwnLayout";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const solAmount = 0.11
-const image = 'https://pbs.twimg.com/profile_images/1567239533728505860/bzoUaVRH_400x400.jpg'
-const Title = 'Stranger Fins'
-const supply = 3856
+const solAmount = 0.069
+const image = 'https://pbs.twimg.com/profile_images/1564241900806307841/GXveEEUf_400x400.jpg'
+const Title = 'Frogz'
+const supply = 2378
 
 document.title = Title
 document.getElementById('favicon').setAttribute('href', image)
