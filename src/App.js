@@ -6,10 +6,10 @@ import OwnLayout from "./OwnLayout/OwnLayout";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const solAmount = 0
-const image = 'https://img-cdn.magiceden.dev/rs:fill:640:640:0:0/plain/https://creator-hub-prod.s3.us-east-2.amazonaws.com/robo_labz_pfp_1663965065265.png'
-const Title = 'RoboLabz'
-const supply = 222
+const solAmount = 0.963
+const image = 'https://howrare.is/drop_logos/5921_vbm3XRTl.jpg'
+const Title = 'Project369'
+const supply = 9630
 
 document.title = Title
 document.getElementById('favicon').setAttribute('href', image)
