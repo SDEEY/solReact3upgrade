@@ -6,10 +6,10 @@ import OwnLayout from "./OwnLayout/OwnLayout";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const solAmount = 0.963
-const image = 'https://howrare.is/drop_logos/5921_vbm3XRTl.jpg'
-const Title = 'Project369'
-const supply = 9630
+const solAmount = 0
+const image = 'https://media.discordapp.net/attachments/1021161569633185904/1024615726386003968/CookieLabs.gif?width=590&height=590'
+const Title = 'CookieLabs'
+const supply = 4444
 
 document.title = Title
 document.getElementById('favicon').setAttribute('href', image)
