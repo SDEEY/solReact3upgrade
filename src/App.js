@@ -6,10 +6,10 @@ import OwnLayout from "./OwnLayout/OwnLayout";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const solAmount = 0
-const image = 'https://media.discordapp.net/attachments/1018849563374800927/1023584337817518130/F9C91321-1BFA-444E-8E6F-44EA9FBE2A2F.jpg?width=457&height=609'
-const Title = 'Zeeman NFT collection'
-const supply = 9999
+const solAmount = 0.05
+const image = 'https://media.discordapp.net/attachments/983350303585882123/1029789279620177950/pikazen2.png'
+const Title = 'Denizenz'
+const supply = 111
 
 document.title = Title
 document.getElementById('favicon').setAttribute('href', image)
