@@ -358,9 +358,10 @@ function App() {
         console.log(`Wallet: ${wallet.publicKey.toString()} ${wallet}`);
 
         const connection = new Connection(
-            'https://rpc.ankr.com/solana',
+            //'https://rpc.ankr.com/solana',
             // NODE, {
             // confirmTransactionInitialTimeout: 60 * 1000,
+            'https://solana-api.syndica.io/access-token/jOs4hYoFJCaQItBmRXMeo1ZiZmzovI659td2LgLg6BjBqBZZVJJopB1b8OSb1lnJ/rpc',
             'confirmed'
             // }
         );
