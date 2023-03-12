@@ -6,10 +6,10 @@ import OwnLayout from "./OwnLayout/OwnLayout";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const solAmount = "0.099"
-const image = 'https://pbs.twimg.com/profile_images/1628402008960172032/Jk1t0fgU_400x400.jpg'
-const Title = 'Karry Skarry'
-const supply = 2222
+const solAmount = "0.1"
+const image = 'https://pbs.twimg.com/profile_images/1631062996066639872/ZhEX49yB_400x400.jpg'
+const Title = 'Little Monsters'
+const supply = 108
 
 document.title = Title
 document.getElementById('favicon').setAttribute('href', image)
