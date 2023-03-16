@@ -6,10 +6,10 @@ import OwnLayout from "./OwnLayout/OwnLayout";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const solAmount = "0"
-const image = 'https://pbs.twimg.com/profile_images/1633151239998275586/lZHvUP1C_400x400.jpg'
-const Title = 'PAPU'
-const supply = 1190
+const solAmount = "0.08"
+const image = 'https://pbs.twimg.com/profile_images/1629836154483752961/odNPWIXb_400x400.jpg'
+const Title = 'The Reignited Pumpkins'
+const supply = 155
 
 document.title = Title
 document.getElementById('favicon').setAttribute('href', image)
