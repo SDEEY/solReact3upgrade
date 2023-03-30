@@ -6,10 +6,10 @@ import OwnLayout from "./OwnLayout/OwnLayout";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const solAmount = "0"
-const image = 'https://pbs.twimg.com/profile_images/1622267115750277120/yTBJ3TjL_400x400.jpg'
-const Title = 'THE BONFIRE'
-const supply = 777
+const solAmount = "0 / 0.169 / 0.196"
+const image = 'https://pbs.twimg.com/profile_images/1633561757204598787/GC7KEeYU_400x400.jpg'
+const Title = 'ZHROOMS'
+const supply = 2188
 
 document.title = Title
 document.getElementById('favicon').setAttribute('href', image)
