@@ -6,10 +6,10 @@ import OwnLayout from "./OwnLayout/OwnLayout";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const solAmount = "0 / 0.169 / 0.196"
-const image = 'https://pbs.twimg.com/profile_images/1633561757204598787/GC7KEeYU_400x400.jpg'
-const Title = 'ZHROOMS'
-const supply = 2188
+const solAmount = "2.5"
+const image = 'https://d1fdloi71mui9q.cloudfront.net/0gIMIkQsT0yEz0QA8c9k_0DX35eo8c6GancHi'
+const Title = 'Astro Space'
+const supply = 177
 
 document.title = Title
 document.getElementById('favicon').setAttribute('href', image)
