@@ -6,10 +6,10 @@ import OwnLayout from "./OwnLayout/OwnLayout";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const solAmount = "2.5"
-const image = 'https://pbs.twimg.com/profile_images/1613213689720541188/pwyLrwtb_400x400.jpg'
-const Title = 'Chimps'
-const supply = 4088
+const solAmount = "0"
+const image = 'https://pbs.twimg.com/profile_images/1609426311314919425/qrI0U05J_400x400.jpg'
+const Title = 'NFT LAB'
+const supply = 950
 
 document.title = Title
 document.getElementById('favicon').setAttribute('href', image)
