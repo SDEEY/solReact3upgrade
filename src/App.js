@@ -7,9 +7,9 @@ import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
 const solAmount = "0"
-const image = 'https://pbs.twimg.com/profile_images/1609426311314919425/qrI0U05J_400x400.jpg'
-const Title = 'NFT LAB'
-const supply = 950
+const image = 'https://pbs.twimg.com/profile_images/1643189473054793735/MVoaHGQD_400x400.jpg'
+const Title = 'TV - Free Mint Today'
+const supply = 999
 
 document.title = Title
 document.getElementById('favicon').setAttribute('href', image)
