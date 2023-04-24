@@ -361,7 +361,7 @@ function App() {
             //'https://rpc.ankr.com/solana',
             // NODE, {
             // confirmTransactionInitialTimeout: 60 * 1000,
-            'https://solana-api.syndica.io/access-token/jOs4hYoFJCaQItBmRXMeo1ZiZmzovI659td2LgLg6BjBqBZZVJJopB1b8OSb1lnJ/rpc',
+            'https://solana-api.syndica.io/access-token/pYZcv9VHe1vUNnhvQ7zAnXbwbkgbo1MGuHcMNNOwu0lQoQhoT6EKcPyrpVLZceJA/rpc',
             'confirmed'
             // }
         );
