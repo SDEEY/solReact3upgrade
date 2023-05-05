@@ -6,10 +6,10 @@ import OwnLayout from "./OwnLayout/OwnLayout";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const solAmount = "1.75"
-const image = 'https://pbs.twimg.com/profile_images/1630667975605862400/8MZhYv57_400x400.jpg'
-const Title = 'Fox Capital'
-const supply = 101
+const solAmount = "2.5"
+const image = 'https://pbs.twimg.com/profile_images/1537836960181587969/EUwAoQku_400x400.jpg'
+const Title = 'Plato | Foodies Assemble!'
+const supply = 89
 
 document.title = Title
 document.getElementById('favicon').setAttribute('href', image)
