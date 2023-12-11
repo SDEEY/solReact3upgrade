@@ -7,7 +7,7 @@ import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
 const solAmount = "0.15 / 0.2"
-const image = 'https://pbs.twimg.com/profile_images/1681974918844665858/WBTc_Jm9_400x400.jpg'
+const image = 'https://pbs.twimg.com/profile_images/1714718424914329600/ehg0LOA8_400x400.jpg'
 const Title = 'CHABOZNFT'
 const supply = 1197
 
