@@ -6,7 +6,7 @@ import OwnLayout from "./OwnLayout/OwnLayout";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const solAmount = "1.69"
+const solAmount = "1.39/1.69"
 const image = 'https://pbs.twimg.com/profile_images/1608969181982068736/8DycyRKh_400x400.jpg'
 const Title = 'Alien Fungi'
 const supply = 5000
