@@ -9,7 +9,7 @@ import imgTwitter from './icons8-twitter-50.png'
 const solAmount = "1.5"
 const image = 'https://img-cdn.magiceden.dev/rs:fill:1600:0:0/plain/https://bafkreigajevnw7lcm4qyr22per7kxv4uavet3k5ljqweuszyfetzxpprfq.ipfs.nftstorage.link/'
 const Title = 'Dolphin Squad'
-const supply = 100
+const supply = 200
 
 document.title = Title
 document.getElementById('favicon').setAttribute('href', image)
