@@ -6,10 +6,10 @@ import OwnLayout from "./OwnLayout/OwnLayout";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const solAmount = "1.5"
-const image = 'https://img-cdn.magiceden.dev/rs:fill:1600:0:0/plain/https://bafkreigajevnw7lcm4qyr22per7kxv4uavet3k5ljqweuszyfetzxpprfq.ipfs.nftstorage.link/'
-const Title = 'Dolphin Squad'
-const supply = 200
+const solAmount = "0.15"
+const image = 'https://pbs.twimg.com/profile_images/1655961279738294272/H_E2_Qzu_400x400.jpg'
+const Title = 'dinoDames'
+const supply = 189
 
 document.title = Title
 document.getElementById('favicon').setAttribute('href', image)
