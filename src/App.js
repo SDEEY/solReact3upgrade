@@ -6,9 +6,9 @@ import OwnLayout from "./OwnLayout/OwnLayout";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const solAmount = "0.15"
-const image = 'https://pbs.twimg.com/profile_images/1655961279738294272/H_E2_Qzu_400x400.jpg'
-const Title = 'dinoDames'
+const solAmount = "0.069"
+const image = 'https://pbs.twimg.com/profile_images/1732086442153660416/Dckaqhy1_400x400.jpg'
+const Title = 'Pixelated Visages'
 const supply = 189
 
 document.title = Title
