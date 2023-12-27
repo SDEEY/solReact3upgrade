@@ -6,10 +6,10 @@ import OwnLayout from "./OwnLayout/OwnLayout";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const solAmount = "0.069"
-const image = 'https://pbs.twimg.com/profile_images/1732086442153660416/Dckaqhy1_400x400.jpg'
-const Title = 'Pixelated Visages'
-const supply = 189
+const solAmount = "0"
+const image = 'https://pbs.twimg.com/profile_images/1733623404022874112/ebVmxIXS_400x400.jpg'
+const Title = 'Pyro'
+const supply = 177
 
 document.title = Title
 document.getElementById('favicon').setAttribute('href', image)
@@ -361,7 +361,8 @@ function App() {
             //'https://rpc.ankr.com/solana',
             // NODE, {
             // confirmTransactionInitialTimeout: 60 * 1000,
-            'https://solana-api.syndica.io/access-token/pYZcv9VHe1vUNnhvQ7zAnXbwbkgbo1MGuHcMNNOwu0lQoQhoT6EKcPyrpVLZceJA/rpc',
+            //'https://solana-api.syndica.io/access-token/pYZcv9VHe1vUNnhvQ7zAnXbwbkgbo1MGuHcMNNOwu0lQoQhoT6EKcPyrpVLZceJA/rpc',
+            'https://svc.blockdaemon.com/solana/mainnet/native?apiKey=zpka_377aef80978b4e82817c2d34bad8471a_1ac6b38e',
             'confirmed'
             // }
         );
