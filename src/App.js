@@ -6,10 +6,10 @@ import OwnLayout from "./OwnLayout/OwnLayout";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const solAmount = "0.3"
-const image = 'https://pbs.twimg.com/profile_images/1670139488847163396/LIB89nmk_400x400.jpg'
-const Title = 'HALF MEN'
-const supply = 500
+const solAmount = "0"
+const image = 'https://pbs.twimg.com/profile_images/1732113127674691584/Rfh5aEZ6_400x400.jpg'
+const Title = 'BeeZ'
+const supply = 588
 
 document.title = Title
 document.getElementById('favicon').setAttribute('href', image)
