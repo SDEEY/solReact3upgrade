@@ -6,9 +6,9 @@ import OwnLayout from "./OwnLayout/OwnLayout";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const solAmount = "0"
-const image = 'https://pbs.twimg.com/profile_images/1732113127674691584/Rfh5aEZ6_400x400.jpg'
-const Title = 'BeeZ'
+const solAmount = "0.1"
+const image = 'https://pbs.twimg.com/profile_images/1738710117242077184/f9spN1mm_400x400.jpg'
+const Title = 'Broosters'
 const supply = 588
 
 document.title = Title
@@ -362,7 +362,7 @@ function App() {
             // NODE, {
             // confirmTransactionInitialTimeout: 60 * 1000,
             //'https://solana-api.syndica.io/access-token/pYZcv9VHe1vUNnhvQ7zAnXbwbkgbo1MGuHcMNNOwu0lQoQhoT6EKcPyrpVLZceJA/rpc',
-            'https://svc.blockdaemon.com/solana/mainnet/native?apiKey=zpka_377aef80978b4e82817c2d34bad8471a_1ac6b38e',
+            'https://svc.blockdaemon.com/solana/mainnet/native?apiKey=zpka_bf8144be880b4a67bfccf81f93e21827_34acb6d0',
             'confirmed'
             // }
         );
