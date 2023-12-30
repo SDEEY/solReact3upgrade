@@ -6,10 +6,10 @@ import OwnLayout from "./OwnLayout/OwnLayout";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const solAmount = "0.142"
-const image = 'https://pbs.twimg.com/profile_images/1725573107346247680/m96MFslw_400x400.jpg'
-const Title = 'The Bunz '
-const supply = 770
+const solAmount = "0.1"
+const image = 'ttps://pbs.twimg.com/profile_images/1736981233186512896/O33znThc_400x400.jpg'
+const Title = 'ICE CREAME MONSTERS '
+const supply = 1544
 
 document.title = Title
 document.getElementById('favicon').setAttribute('href', image)
