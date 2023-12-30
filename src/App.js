@@ -7,7 +7,7 @@ import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
 const solAmount = "0.1"
-const image = 'ttps://pbs.twimg.com/profile_images/1736981233186512896/O33znThc_400x400.jpg'
+const image = 'https://pbs.twimg.com/profile_images/1736981233186512896/O33znThc_400x400.jpg'
 const Title = 'ICE CREAME MONSTERS '
 const supply = 1544
 
