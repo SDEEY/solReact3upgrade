@@ -6,10 +6,10 @@ import OwnLayout from "./OwnLayout/OwnLayout";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const solAmount = '0.1'
-const image = 'https://pbs.twimg.com/profile_images/1738318317637586944/XDSQ4KCZ_400x400.jpg'
-const Title = 'bonklet nft'
-const supply = 3499
+const solAmount = '0.068 – 0.1'
+const image = 'https://pbs.twimg.com/profile_images/1737463329289867264/uVW-foU1_400x400.png'
+const Title = 'EpicZoo'
+const supply = 2222
 
 document.title = Title
 document.getElementById('favicon').setAttribute('href', image)
